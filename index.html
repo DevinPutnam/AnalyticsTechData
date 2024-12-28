@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Button Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <img id="logo" src="{{ url_for('static', filename='images/ATD.png') }}" alt="Website Logo">
+</head>
+<body>
+    <header>
+        <h1>Analytics Technology Data</h1>
+        <h2>Analyze Everything</h2>
+    </header>
+
+    <main>
+        <!-- Buttons section -->
+        <div id="button-container">
+            <!-- Projects Button with redirection -->
+            <a href="{{ url_for('projects') }}">
+                <button id="runFunctionBtn">Projects</button>
+            </a>
+            <!-- About Me Button with redirection -->
+            <a href="{{ url_for('about_me') }}">
+                <button id="runFunctionBtn">About Me</button>
+            </a>
+            <!-- Request Data Analysis Button with redirection -->
+            <a href="{{ url_for('request_data_analysis') }}">
+                <button id="runFunctionBtn">Request Data Analysis</button>
+            </a>
+            <!-- Contact Us Button with redirection -->
+            <a href="{{ url_for('contact_us') }}">
+                <button id="runFunctionBtn">Contact Us</button>
+            </a>
+        </div>
+
+        <!-- Sections container to hold sections side by side -->
+        <div id="sections-container">
+            <section id="intro-text">
+                <h3>Our Goal</h3>
+                <ul>
+                    <li>ATD is a free service offering professional standard, statistical data. Whether it be graphs, tables, or statistical analysis, ATD is here to assist you.</li>
+                </ul>
+            </section>
+        
+            <section id="jobs"> 
+                <h4>What We Offer</h4>
+                <ul>
+                    <li>Statistical Models</li>
+                    <li>High Level Analysis</li>
+                    <li>Website Design</li>
+                    <li>Professional Standard Work</li>
+                </ul>
+            </section>
+
+            <section id="why">
+                <h5>Why Us?</h5>
+                <ul>
+                    <li>It is Free!</li>
+                    <li>Lots of Experience</li>
+                    <li>Customizable</li>
+                    <li>Efficient</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- This section will show the result of the Python function -->
+        <div id="result">
+            {% if result %}
+                <p>{{ result }}</p>
+            {% endif %}
+        </div>
+    </main>
+
+    <footer>
+        <p>Devin Putnam</p>
+    </footer>
+</body>
+</html>
