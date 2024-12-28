@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: tan;
+    margin: 0;
+    padding: 0;
+    color: #2B2B2B;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(20, 62, 20);
+    color: tan;
+    padding: 35px;
+    text-align: center;
+}
+
+/* Main content area with Flexbox */
+main {
+    display: flex;
+    flex-direction: column;  /* Stack sections vertically */
+    padding: 20px;
+    gap: 20px; /* Space between the sections */
+    margin: 0 20px;
+}
+
+/* Equal size for all sections */
+main section {
+    flex-grow: 1;  /* Ensures the section takes available space */
+    height: 300px;  /* Fixed height for equal sizing */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures equal spacing within the section */
+}
+#data, #client1, #python{
+    /* Ensures equal sizing for all sections */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between content */
+}
+
+/* Data Section */
+#data {
+    flex: 1 1 45%;  /* Flex basis set to 45%, and allows it to grow */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+}
+
+#data h2 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#data ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#data ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Client 1 Section (Styled with a box) */
+/* Client 1 Section (Styled with a box) */
+#client1 {
+    flex: 1 1 45%;  /* Flex basis set to 45%, and allows it to grow */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+}
+
+#client1 h3 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#client1 a {
+    text-decoration: none;   /* Remove the underline by default */
+    color: #2B2B2B;          /* Text color */
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#client1 a:hover {
+    text-decoration: underline;  /* Add underline on hover */
+    color: #007BFF;              /* Optional: Change color on hover */
+}
+
+#client1 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#client1 ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* Python Section */
+#python {
+    flex: 1 1 45%;  /* Flex basis set to 45%, and allows it to grow */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+}
+
+#python h4 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#python ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #2B2B2B;
+}
+
+#python ul li {
+    font-size: 16px;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: tan;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Style for the "Home" button */
+nav {
+    text-align: center;          /* Center the content inside the nav */
+    width: 100%;                 /* Make the nav take the full width of the page */
+}
+
+nav ul {
+    list-style-type: none;       /* Remove default list styling */
+    padding: 0;                  /* Remove padding from the ul */
+    margin: 0;                   /* Remove margin from the ul */
+}
+
+nav li {
+    display: inline-block;       /* Make the list items appear in a row (inline) */
+    margin: 0 10px;              /* Add some space between the items */
+}
+
+nav a {
+    text-decoration: none;       /* Remove underline from the link */
+    color: white;                /* Set the text color */
+    background-color: #4CAF50;   /* Set background color */
+    padding: 10px 20px;          /* Add padding inside the button */
+    border-radius: 5px;          /* Round the corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+nav a:hover {
+    background-color: #45a049;   /* Darker green when hovered */
+}
+
+
+

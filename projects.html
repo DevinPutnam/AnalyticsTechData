@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Links Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+    <img id="logo" src="{{ url_for('static', filename='images/ATD.png') }}" alt="Website Logo">
+</head>
+<body>
+    <!-- Logo at the top left -->
+    <img id="logo" src="{{ url_for('static', filename='images/ATD.png') }}" alt="Website Logo">
+
+    <!-- Header Section -->
+    <header>
+        <h1>Projects and Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area with links -->
+    <main>
+        <!-- Raw Data Section -->
+        <section id="data">
+            <h2><a href="http://localhost:8000/CT_education.html" download>Raw Data</a></h2>
+            <ul>
+                <li>Pure data and graphs from my first client!</li>
+            </ul>
+        </section>
+
+        <!-- Client 1 Section (now styled as a box) -->
+        <section id="client1">
+            <h3><a href="http://localhost:8000/Presentation%20(1).pdf" target="_blank">Client 1</a></h3>
+            <ul>
+                <li>Final Product of client 1 and standard of the work you will receive! Real presentation which will be used in court to help prove the differences in education level between Connecticut and California.</li>
+            </ul>
+        </section>
+
+        <!-- Personal Python Project Section -->
+        <section id="python">
+            <h4><a href="http://localhost:8000/CPS_mini_project.py" download>Personal Python Project</a></h4>
+            <ul>
+                <li>Fun little python script on the odds of two soccer teams winning!</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

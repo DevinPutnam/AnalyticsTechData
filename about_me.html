@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS (optional) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_about_me.css') }}">
+    <img id="logo" src="{{ url_for('static', filename='images/ATD.png') }}" alt="Website Logo">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Me</h1>
+        <nav>   
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Hello! My name is Devin Putnam. I am currently a college student with a love for statistics and analytics. ATD was created as a way to get real life data expertise while helping the community. Growing up my love for statistical analysis was aided by my love for soccer. I was fascinated with the idea that statsics could explain so much behind teams doing well or why some players are better than others. </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <ul>
+                <li>Web Development (Python, R, SQL, HTML, CSS)</li>
+                <li>Python Programming</li>
+                <li>Data Analysis & Machine Learning</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Guilford High School Graduate</li>
+                <li>Franklin & Marshall College (Sophomore)</li>
+                <li>Majors</li>
+                <li>Bioinformatics, Computer Science, Data Science</li>
+                <li>Other Areas of Interest</li>
+                <li>German</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out through any of the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:AnalyticsTechData@gmail.com">AnalyticsTechData@gmail.com</a></li>
+                <li>Phone: 203-645-8623 (Text will most likely result in faster responses)</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Devin Putnam. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

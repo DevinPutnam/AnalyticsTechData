@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: tan;
+    margin: 0;
+    padding: 0;
+    color: #2B2B2B;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(20, 62, 20);
+    color: tan;
+    padding: 35px;
+    text-align: center;
+}
+
+/* Main content area, using flexbox to align sections */
+main {
+    display: flex;
+    justify-content: space-between;  /* Ensure sections are spaced evenly */
+    padding: 20px;
+    gap: 20px; /* Space between the sections */
+    margin: 0 20px; /* Add margin to the sides */
+    flex-wrap: wrap; /* Allow wrapping if screen is smaller */
+}
+
+/* Introduction section (on the left) */
+#introduction {
+    flex: 1 1 45%;  /* Flex basis set to 45%, and allows it to grow */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+}
+
+#introduction h2 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#introduction p {
+    font-size: 16px;
+}
+
+/* Skills & Expertise section (on the right) */
+#skills {
+    flex: 1 1 45%;  /* Flex basis set to 45%, and allows it to grow */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Education Section */
+#education {
+    flex: 1 1 45%;  /* Flex basis set to 45%, and allows it to grow */
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    border-radius: 8px;
+    margin-top: 20px;  /* Space between sections */
+}
+
+#education h2 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#education ul {
+    list-style-type: none;
+    padding-left: 0;  /* Remove any default padding */
+}
+
+#education ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: tan;
+    padding: 20px;
+    box-shadow: 0 2px 8px white;
+    margin-top: 20px;  /* Space between sections */
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #2B2B2B;
+}
+
+#contact ul li {
+    font-size: 16px;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: tan;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Style for the "Home" button */
+nav {
+    text-align: center;          /* Center the content inside the nav */
+    width: 100%;                 /* Make the nav take the full width of the page */
+}
+
+nav ul {
+    list-style-type: none;       /* Remove default list styling */
+    padding: 0;                  /* Remove padding from the ul */
+    margin: 0;                   /* Remove margin from the ul */
+}
+
+nav li {
+    display: inline-block;       /* Make the list items appear in a row (inline) */
+    margin: 0 10px;              /* Add some space between the items */
+}
+
+nav a {
+    text-decoration: none;       /* Remove underline from the link */
+    color: white;                /* Set the text color */
+    background-color: #4CAF50;   /* Set background color */
+    padding: 10px 20px;          /* Add padding inside the button */
+    border-radius: 5px;          /* Round the corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+nav a:hover {
+    background-color: #45a049;   /* Darker green when hovered */
+}
